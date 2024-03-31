@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Game Answers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1 id="title">Game Answers</h1>
+<h2 id="subtitle">Insert your game answers here</h2>
+
+<form id="dynamicForm" action="/submit" method="POST">
+    <div id="formFields">
+        <div class="form-group">
+            <label for="QuestionNumber1">Question Number:</label>
+            <input type="number" name="questionNumber1" id="QuestionNumber1">
+            <label for="AnswerNumber1">Your Answer:</label>
+            <input type="text" name="answerNumber1" id="AnswerNumber1">
+        </div>
+    </div>
+    <button type="button" onclick="addField()">Add Answer</button>
+    <button type="submit" class="submit-button">Submit</button>
+</form>
+
+<footer>
+    Productions
+</footer>
+
+<script src="./index.js"></script>
+</body>
+
+</html>
